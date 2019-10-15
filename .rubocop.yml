@@ -1,1 +1,19 @@
 inherit_from: .rubocop_todo.yml
+
+# 追加した規約ファイル読込
+require:
+  - rubocop-rails
+
+# 日本語でのコメントを許可
+AsciiComments:
+  Enabled: false
+
+ # 除外
+  Exclude:
+    - 'config.ru'
+    - 'bin/**'
+    - 'lib/**'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - !ruby/regexp /old_and_unused\.rb$/
