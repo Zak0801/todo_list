@@ -11,6 +11,9 @@ gem 'rails', '~> 5.1.7'
 # Use slim instead of html
 gem 'slim-rails'
 gem 'html2slim'
+#Introduction of bootstrap
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
 # Use rspec as a test tool
 gem 'rspec-rails', '~> 3.6.0'
 # Use mysql as the database for Active Record
