@@ -11,7 +11,7 @@ gem 'rails', '~> 5.1.7'
 # Use slim instead of html
 gem 'slim-rails'
 gem 'html2slim'
-#Introduction of bootstrap
+# Introduction of bootstrap
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 # Use rspec as a test tool
