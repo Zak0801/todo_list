@@ -8,6 +8,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
+# Use slim instead of html
+gem 'slim-rails'
+gem 'html2slim'
 # Use rspec as a test tool
 gem 'rspec-rails', '~> 3.6.0'
 # Use mysql as the database for Active Record
