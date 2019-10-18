@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
+# Introduction of bcrypt
+gem 'bcrypt', '~> 3.1.11'
 # Use slim instead of html
 gem 'slim-rails'
 gem 'html2slim'
