@@ -1,8 +1,12 @@
 @import "bootstrap";
 
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .btn{
-    width: 200px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 input, textarea, select, .uneditable-input {
