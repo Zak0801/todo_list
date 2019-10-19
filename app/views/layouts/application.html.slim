@@ -7,18 +7,5 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    header
-      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-        a.navbar-brand[href="#"]
-          | Todo list
-        button.navbar-toggler[type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"]
-          span.navbar-toggler-icon
-        .navbar-nav.ml-auto
-          ul.navbar-nav.mr-auto
-            li.nav-item.active
-              = link_to "Home", root_path, class: "nav-link"
-            li.nav-item.active
-              = link_to "#", "#", class: "nav-link"
-            li.nav-item.active
-              = link_to "#", "#", class: "nav-link"
+    = render 'layouts/header'
     = yield
