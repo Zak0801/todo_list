@@ -8,4 +8,7 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
     = render 'layouts/header'
-    = yield
+    .container
+      - flash.each do |message_type, message|
+        div class="alert" class="alert-#{message_type}" =message
+      = yield
