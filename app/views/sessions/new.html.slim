@@ -1,2 +1,15 @@
-h1 Sessions#new
-p Find me in app/views/sessions/new.html.slim
+.container
+    h1.text-center Log in
+
+.row
+    .col-md-6.offset-md-3
+        = form_for :session do |f|
+            
+            = f.label :email
+            = f.email_field :email, class: "form-control"
+
+            = f.label :password
+            = f.password_field :password, class: "form-control"
+
+            .col-md-6.offset-md-3
+                = f.submit "Log in", class: "btn btn-primary"
