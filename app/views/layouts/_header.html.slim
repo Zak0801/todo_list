@@ -1,6 +1,6 @@
 header
   nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-    a.navbar-brand[href="/"]
+    a.navbar-brand[href="#"]
       | Todo list
     button.navbar-toggler[type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"]
       span.navbar-toggler-icon
@@ -8,7 +8,7 @@ header
       .navbar-nav.ml-auto
         ul.navbar-nav.mr-auto
           li.nav-item.active
-            = link_to "Home", root_path, class: "nav-link"
+            = link_to "Home", user_path(current_user), class: "nav-link"
           li.nav-item.active
             = link_to "Logout", logout_path, class: "nav-link", method: :delete
           li.nav-item.active
@@ -17,9 +17,9 @@ header
       .navbar-nav.ml-auto
         ul.navbar-nav.mr-auto
           li.nav-item.active
-            = link_to "Login", login_path, class: "nav-link"
+            = link_to "Home", root_path, class: "nav-link"
           li.nav-item.active
-            = link_to "#", "#", class: "nav-link"
+            = link_to "Log in", login_path, class: "nav-link"
           li.nav-item.active
-            = link_to "#", "#", class: "nav-link"
+            = link_to "Sign up", new_user_path, class: "nav-link"
 
