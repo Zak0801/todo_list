@@ -1,2 +1,6 @@
 h1.text-center
   = @user.name
+
+.row
+  .col-md-4.offset-md-4
+    = link_to 'Add a new task', tasks_new_path, class: "btn btn-primary mx-auto d-block"
