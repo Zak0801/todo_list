@@ -43,14 +43,6 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end
 
-  # userがログインしていないことをチェックする
-  def not_logged_in_user?
-    unless logged_in?
-      flash[:danger] = 'Please log in.'
-      redirect_to login_url
-    end
-  end
-
   # userがcurrent_userであるのかをチェックする
   def current_user?
     # redirect_to(root_url) unless params[:id] == current_user.id
