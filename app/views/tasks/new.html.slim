@@ -4,8 +4,12 @@ h1.text-center Add a new task
   .col-md-6.offset-md-3
     = form_for @task do |f|
       = render 'shared/error_messages', object: f.object
-      
+
       = f.label :content
       = f.text_field :content, placeholder: "Add your task"
+
+      = f.label :deadline
+      = f.text_field :end_at, class: "form-control datetimepicker-input", id: "start_time", data: {toggle: "datetimepicker", target: "#start_time"}
+
 
       = f.submit "Add task", class: "btn btn-primary"

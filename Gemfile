@@ -20,7 +20,7 @@ gem 'bootstrap4-datetime-picker-rails'
 # Introduction of momentjs
 gem 'momentjs-rails'
 # Introduction of font-awesome
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 gem 'jquery-rails'
 # Use rspec as a test tool
 gem 'rspec-rails', '~> 3.6.0'
