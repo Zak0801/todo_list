@@ -17,6 +17,8 @@ gem 'html2slim'
 gem 'bootstrap', '~> 4.3.1'
 # Introduction of Datetime Picker
 gem 'bootstrap4-datetime-picker-rails'
+# Introduction of momentjs
+gem 'momentjs-rails'
 gem 'jquery-rails'
 # Use rspec as a test tool
 gem 'rspec-rails', '~> 3.6.0'
