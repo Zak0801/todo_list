@@ -17,3 +17,4 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require tempusdominus-bootstrap-4.js
