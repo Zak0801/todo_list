@@ -1,6 +1,20 @@
-h1.text-center
-  = @user.name
+h1.text-center List of tasks
 
 .row
   .col-md-4.offset-md-4
     = link_to 'Add a new task', new_task_path, class: "btn btn-primary mx-auto d-block"
+  .col-md-10.offset-md-1
+    table.table.table-bordered
+      thread
+        tr.text-center
+          th.table-success Content
+          th.table-success Deadline
+          th.table-success is_finsished?
+      tbody
+        - @tasks.each do |task|
+          tr.text-center
+            td = task.content
+            td = task.end_at
+            td = task.is_finished?    
+        / li.text-center = task.content
+  

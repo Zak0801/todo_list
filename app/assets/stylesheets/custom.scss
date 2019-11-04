@@ -14,7 +14,15 @@ input, textarea, select, .uneditable-input {
     width: 100%;
     margin-bottom: 15px;
 }
-  
+
 input, textarea {
     height: auto !important;
+}
+
+li {
+    list-style: none;
+}
+
+.table{
+    margin-top: 50px;
 }
