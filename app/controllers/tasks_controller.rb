@@ -20,6 +20,6 @@ class TasksController < ApplicationController
   private
 
   def micropost_params
-    params.require(:task).permit(:content)
+    params.require(:task).permit(:content, :end_at, :is_finished)
   end
 end
