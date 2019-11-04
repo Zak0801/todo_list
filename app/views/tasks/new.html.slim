@@ -3,6 +3,7 @@ h1.text-center Add a new task
 .row
   .col-md-6.offset-md-3
     = form_for @task do |f|
+      = render 'shared/error_messages', object: f.object
       = f.label :content
       = f.text_field :content, placeholder: "Add your task"
 
