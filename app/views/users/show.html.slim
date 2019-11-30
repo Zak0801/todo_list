@@ -9,12 +9,21 @@ h1.text-center List of tasks
         tr.text-center
           th.table-success Content
           th.table-success Deadline
-          th.table-success is_finsished?
+          th.table-success is_finished?
       tbody
+        - i = 0
         - @tasks.each do |task|
+          - i += 1
           tr.text-center
             td = task.content
             td = task.end_at
-            td = task.is_finished
-        / li.text-center = task.content
-  
+            td[id ="process_#{i}" onclick="changeText(#{i})"] = 'Todo'
+
+javascript:
+  // var elements = document.getElementsByTagName('tr');
+  // var num = elements.length;
+  var changeText = function(num){
+    var selectedId = document.getElementById('process_' + num)
+    console.log("押しました");
+    selectedId.innerHTML = "Done"
+  }
