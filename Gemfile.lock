@@ -111,7 +111,7 @@ GEM
     popper_js (1.14.5)
     pre-commit (0.39.0)
       pluginator (~> 1.5)
-    puma (3.12.1)
+    puma (3.12.4)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -251,7 +251,7 @@ DEPENDENCIES
   momentjs-rails
   mysql2 (>= 0.3.18, < 0.6.0)
   pre-commit
-  puma (~> 3.7)
+  puma (~> 3.12)
   rails (~> 5.1.7)
   rspec-rails (~> 3.6.0)
   rubocop
